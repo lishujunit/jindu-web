@@ -1,0 +1,253 @@
+@import "~./varibles.scss";
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.bg {
+  background-color: #fff;
+}
+
+.var {
+  color: $global-color !important;
+}
+
+.danger {
+  color: $danger-color !important;
+}
+
+.under {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-box {
+  overflow: hidden;
+
+  .btn {
+    &:not(.disabled) {
+      color: $global-color;
+    }
+
+    text-decoration: underline;
+    display: inline-block;
+    //float: left;
+
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+
+    cursor: pointer;
+  }
+}
+
+.search {
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  form {
+    min-height: 70px;
+    overflow: hidden;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-right: 260px;
+  }
+
+  button {
+    margin: 0 20px 0 0;
+  }
+
+  .date {
+    width: 150px;
+  }
+
+  .state {
+    width: 184px;
+  }
+
+  .rightBox {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+}
+
+/*tab切换*/
+.tabText {
+  margin-top: 20px;
+
+  .el-tabs__header {
+    background: #fff;
+    padding: 0 15px;
+
+    .el-tabs__nav-wrap::after {
+      display: none;
+    }
+
+    .el-tabs__item {
+      height: 30px;
+      padding: 0;
+      margin-top: 6px;
+
+      .dbl {
+        // border-radius: 15px;
+        line-height: 28px;
+        // border-bottom: $txts-color dashed 1px;
+        color: $txts-color;
+        padding: 0 10px !important;
+        display: block;
+        user-select: none;
+
+        &.has {
+          color: #bdbdbf;
+          border-color: #bdbdbf;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &.is-active {
+        .dbl {
+          border-color: $global-color;
+          color: $global-color;
+          border-bottom: #0cb3f0 solid 2px;
+        }
+      }
+    }
+
+    .el-tabs__active-bar {
+      display: none;
+    }
+  }
+}
+
+.titleTab {
+  > .el-tabs__header {
+    .el-tabs__nav-scroll {
+      padding: 0 20px;
+    }
+
+    .el-tabs__item {
+      font-size: 16px;
+      color: #424242;
+      margin-bottom: 4px;
+      height: 36px;
+      line-height: 36px;
+
+      &.is-active {
+        color: #424242;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+        background: $table-color;
+        width: 1px;
+        height: 12px;
+        right: 0;
+        top: 12px;
+        position: absolute;
+      }
+    }
+
+    .el-tabs__active-bar {
+      padding: 0 20px;
+      left: -20px;
+      height: 4px;
+    }
+
+    .el-tabs__nav-wrap::after {
+      height: 1px;
+      background: $table-color;
+    }
+  }
+}
+
+.viewBox {
+  position: relative;
+  overflow: hidden;
+
+  .topBox {
+    background: #ecf1f4;
+    padding: 0 13px;
+    border-bottom: 1px solid $table-color;
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+
+    .el-form--inline {
+      margin-top: 8px;
+
+      .el-form-item {
+        margin-bottom: 0;
+      }
+
+      .searchBtn {
+        padding: 8px 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .leftBox {
+    border: 1px solid $table-color;
+    border-right: none;
+  }
+
+  .rightBox {
+    border: 1px solid $table-color;
+    border-left: none;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: $table-color;
+  }
+
+  .boxTable {
+    th,
+    td {
+      padding: 5px 0;
+      background: none;
+    }
+  }
+}
+
+.popover.el-popover {
+  padding: 0;
+}
+
+.el-table tr.warn { //tr 高亮显示
+  background: #ffc;
+  position: relative;
+
+  td {
+    border-bottom-color: #ec395a;
+    border-top: 1px solid #ec395a;
+
+    &:first-child {
+      border-left: 1px solid #ec395a;
+    }
+
+    &:last-child {
+      border-right: 1px solid #ec395a;
+    }
+  }
+}
+
+body .el-table th.gutter{
+  display: table-cell !important;
+}

@@ -1,0 +1,223 @@
+@import '~./varibles.scss';
+@charset "utf-8";
+html,body {
+    background-color: #f2f4f7;
+    color: $txt-color;
+    font-size: 12px;
+    font-family: 'Avenir', 'Microsoft Yahei', Helvetica, Arial, sans-serif, simsun, sans-serif;
+    -webkit-text-size-adjust: none;
+    line-height:1;
+    overflow:hidden;
+    width:100%;
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', 'Microsoft Yahei', Helvetica, Arial, sans-serif, simsun, sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left
+}
+
+caption,
+th {
+    text-align: inherit
+}
+
+ul,
+ol,
+menu {
+    list-style: none
+}
+
+fieldset,
+img {
+    border: 0;
+    height:auto;
+}
+
+object,
+input,
+textarea,
+button,
+select {
+    vertical-align: middle
+}
+
+
+
+input,
+textarea,
+button,
+select,
+a {
+    outline: 0 none;
+    border: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+mark {
+    background-color: transparent
+}
+
+a,
+ins,
+s,
+u,
+del {
+    text-decoration: none
+}
+
+sup,
+sub {
+    vertical-align: baseline
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+hr {
+    height: .02rem;
+    margin: .1rem 0;
+    border: medium none;
+    border-top: .02rem solid #cacaca;
+}
+
+a {
+    color: #25a4bb;
+    text-decoration: none;
+}
+body, #app, .main {
+    height: 100%;
+    overflow :hidden;
+    .bgImg {
+        position: fixed;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #ccd4e3;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccd4e3;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccd4e3;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccd4e3;
+}
+*:focus {
+    outline: none;
+}
+img, input, select {
+    vertical-align: middle;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.page{
+    .el-pagination__sizes{
+        float: left;
+    }
+}
+.netTable{
+    .el-table__expanded-cell{
+        padding: 0;
+    }
+}
+.checkTable{
+    table{
+        position: relative;
+        tr{
+            padding: 0;
+            margin: 0;
+            height: 46px;
+            .el-table--small th, .el-table--small td {
+                padding: 0;
+            }
+            td{
+                padding: 0;
+                margin: 0;
+                //line-height: 20px;
+            }
+        }
+    }
+    .el-table td div {
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}

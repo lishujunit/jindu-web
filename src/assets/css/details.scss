@@ -1,0 +1,498 @@
+@import '~./varibles.scss';
+
+.boxItem {
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 20px 15px 20px 27px;
+
+	.allTitle {
+		font-size: 16px;
+		position: relative;
+		line-height: 20px;
+		margin-bottom: 20px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			background: $global-color;
+			border-radius: 50%;
+			top: 50%;
+			margin-top: -3px;
+			left: -14px;
+		}
+	}
+
+	&.basic {
+		.context {
+			overflow: hidden;
+
+			.item {
+				width: 33.3%;
+				font-size: 13px;
+				margin-bottom: 14px;
+				overflow: hidden;
+
+				>span {
+					display: block;
+					float: left;
+					line-height: 30px;
+				}
+
+				span.name {
+					margin-right: 10px;
+				}
+
+				.status {
+					display: inline-block;
+					border: 1px solid #666;
+					border-radius: 2px;
+					line-height: 18px;
+					padding: 0 4px;
+					margin-left: 20px;
+
+					&.danger {
+						border-color: $danger-color;
+					}
+				}
+
+				.avatarBox {
+					display: left;
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+
+	&.searchInfo {
+		.borderBox {
+			border: 1px solid $table-color;
+			overflow: hidden;
+			width: 315px;
+			display: inline-block;
+
+			.title {
+				overflow: hidden;
+				line-height: 30px;
+				border-bottom: 1px solid $table-color;
+				padding: 0 13px;
+				height: 30px;
+
+				i {
+					color: $global-color;
+				}
+			}
+
+			.context {
+				padding: 10px 15px;
+				overflow: hidden;
+
+				.item {
+					overflow: hidden;
+					padding: 10px 0;
+
+					>span:first-child {
+						width: 65px;
+					}
+
+					>span {
+						display: block;
+						line-height: 26px;
+					}
+
+					.var {
+						font-size: 20px;
+					}
+				}
+
+				>.uploadBox {
+					margin-top: 15px;
+					text-align: center;
+					margin-right: 10px;
+					line-height: 30px;
+
+					.upload {
+						border: 1px solid $global-color;
+						width: 40px;
+						height: 40px;
+						text-align: center;
+						margin: 0 auto;
+
+						i {
+							line-height: 40px;
+							color: $global-color;
+							font-size: 22px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	&.type {
+		overflow: hidden;
+		padding: 40px 15px 20px 27px;
+
+		.allTitle {
+			float: left;
+			line-height: 32px;
+			margin-right: 25px;
+		}
+	}
+
+	&.member {
+		.list {
+			overflow: hidden;
+
+			.avatarBox {
+				margin-right: 10px;
+
+			}
+		}
+	}
+
+	&.matter {
+		.list {
+			margin-bottom: 20px;
+
+			ul li {
+				>.item {
+					overflow: hidden;
+					width: 50%;
+					padding: 18px 0;
+					border-bottom: 1px solid #d7d7d7;
+					position: relative;
+					min-width: 500px;
+
+					.name {
+						font-weight: 600;
+						width: 40%;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						white-space: nowrap;
+						margin-right: 10px;
+					}
+
+					.status {
+						color: #cac9c5;
+						position: absolute;
+						right: 80px;
+						border: 1px solid #cac9c5;
+						border-radius: 2px;
+						line-height: 18px;
+						padding: 0 4px;
+						top: 50%;
+						margin-top: -10px;
+					}
+
+					.fr {
+						color: #cac9c5;
+						cursor: pointer;
+					}
+				}
+
+				.unit {
+					border: 1px solid #cac9c5;
+					margin-top: 10px;
+					padding: 10px 0;
+
+					.item {
+						color: $global-color;
+						border: 1px solid $global-color;
+						display: inline-block;
+						margin: 10px 25px;
+						line-height: 20px;
+						padding: 0 8px;
+						border-radius: 2px;
+					}
+				}
+
+			}
+		}
+
+		.inputList {
+
+			.top {
+				margin-top: 10px;
+				overflow: hidden;
+				margin-bottom: 15px;
+
+				.name {
+					border: 1px solid $table-color;
+					line-height: 28px;
+					padding-left: 10px;
+					overflow: hidden;
+
+					>* {
+						display: block;
+						float: left;
+					}
+				}
+
+				.el-input {
+					width: 240px;
+					height: 28px;
+					float: left;
+					display: block;
+
+					input {
+						display: block;
+						padding-right: 10px;
+						border: none;
+						border-radius: 0;
+					}
+				}
+
+
+				.btn {
+					background: $global-color;
+					color: #fff;
+					padding: 0 10px;
+					cursor: pointer;
+
+					&.edit {
+						background: $danger-color;
+					}
+				}
+
+				.add {
+					margin-top: 5px;
+					margin-left: 10px;
+					margin-right: 0;
+
+					&.delete {
+						border-color: $danger-color;
+
+						i {
+							color: $danger-color;
+						}
+
+					}
+				}
+			}
+
+			.unit {
+				width: 80%;
+				min-width: 800px;
+
+				.el-checkbox {
+					margin-bottom: 5px;
+					width: 24%;
+					margin-right: 1%;
+					line-height: 28px;
+				}
+
+				.custom {
+					width: auto;
+				}
+
+				.el-input {
+					display: inline-block;
+					width: 200px;
+				}
+			}
+
+		}
+
+	}
+
+	&.process {
+		.borderBox {
+			height: 140px;
+
+			.fl.uploadBox {
+				margin-left: 50px;
+			}
+
+			.file {
+				float: left;
+				text-align: center;
+				margin-top: 10px;
+				width: 33.33%;
+
+				i {
+					font-size: 45px;
+					color: $global-color;
+				}
+
+				>div {
+					color: $global-color;
+					text-align: center;
+					margin-top: 15px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+			}
+		}
+
+	}
+}
+
+.avatarBox {
+	display: inline-block;
+
+	.avatar {
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+		border-radius: 50%;
+		float: left;
+		margin-right: 8px;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.name {
+		float: left;
+		line-height: 30px;
+	}
+
+
+}
+
+.add {
+	border: 1px solid $global-color;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	margin: 0;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+
+	i {
+		line-height: 18px;
+		color: $global-color;
+		font-size: 16px;
+	}
+}
+
+.laywer {
+	.el-dialog {
+		border-radius: 5px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -260px;
+		bottom: 15vh;
+		top: 0;
+
+		.el-dialog__header {
+			border-radius: 5px 5px 0 0;
+			background: $global-color;
+			color: #fff;
+			font-size: 16px;
+			padding: 12px 5px 12px 30px;
+
+			.el-dialog__headerbtn {
+				top: 12px;
+
+				.el-dialog__close {
+					color: #fff;
+					font-size: 20px;
+
+				}
+			}
+		}
+	}
+
+	.el-dialog__body {
+		border: 1px solid $table-color;
+		border-top: none;
+		height: calc(100% - 100px);
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.el-dialog__footer {
+		padding: 15px 0;
+	}
+
+	.context {
+		overflow: hidden;
+		height: 100%;
+		position: relative;
+
+		>div {
+			height: 100%;
+			overflow: auto;
+			width: 50%;
+			padding: 10px 15px;
+			box-sizing: border-box;
+
+			&.fr {
+				.el-icon-error {
+					font-size: 20px;
+					margin-top: 5px;
+					float: right;
+				}
+
+				li {
+					cursor: pointer;
+
+					.name {
+						width: 140px
+					}
+				}
+			}
+
+			&.fl {
+				.list {
+					// margin-top: 10px;
+				}
+
+				&::after {
+					content: '';
+					width: 1px;
+					top: 0;
+					bottom: 0;
+					right: 50%;
+					background: $table-color;
+					position: absolute;
+				}
+
+				li {
+					cursor: pointer;
+
+					.name {
+						width: 160px
+					}
+				}
+			}
+		}
+
+		.outer {
+			line-height: 30px;
+			cursor: pointer;
+
+			i {
+				font-weight: 600;
+				margin-right: 5px;
+			}
+		}
+
+		.inner {
+			li {
+				margin: 8px 0;
+				margin-left: 19px;
+
+				.name {
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+
+		.noData {
+			line-height: 30px;
+			margin-left: 19px;
+		}
+	}
+}

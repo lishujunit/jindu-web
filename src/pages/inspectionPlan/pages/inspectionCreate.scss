@@ -1,0 +1,240 @@
+.wrap-content{
+  width: 100%;
+  .ins-upload{
+    margin-top: 10px;
+    .upload{
+      color: #fff;
+    }
+    >div{
+      float: left;
+    }
+    >.big-btns{
+      width: 120px;
+      height: 30px;
+      font-size: 12px;
+      color: #fff;
+      background: $global-color;
+      margin-right: 20px;
+      line-height: 30px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    >div:last-of-type{
+      background: none;
+      margin-top: 10px;
+      margin-left: 20px;
+      color: $global-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .tab-list{
+    float: left;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .fr{
+      float: right;
+    }
+    .items{
+      float: left;
+      width: calc(100% - 130px);
+      margin-top: -20px;
+    }
+    .last{
+      width: 120px;
+      margin-top: 14px;
+      margin-right: 10px;
+      float: right;
+    }
+    .el-tabs__nav-prev{
+      margin-top: 10px;
+    }
+  }
+  .check-plan{
+    float: left;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .items{
+      margin-top: -20px;
+    }
+    //>p{
+    //  text-align: center;
+    //  float: left;
+    //  border-radius: 20px;
+    //  height: 30px;
+    //  margin: 10px 10px 0 10px;
+    //  line-height: 30px;
+    //  padding: 0 20px;
+    //  border: 1px dashed #666;
+    //  cursor: pointer;
+    //  &:hover{
+    //    color: $global-color;
+    //    border-color: $global-color;
+    //  }
+    //}
+  }
+  .check-table{
+    >div{
+      margin-top: 20px;
+      float: left;
+      padding-bottom: 20px;
+      >p{
+        float: left;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &.active{
+          font-weight: bold;
+          color: #666;
+        }
+      }
+      >p:last-of-type{
+        margin-left: 20px;
+      }
+    }
+    .tabBtn{
+      float: right;
+      color: #fff;
+      >p{
+        cursor: pointer;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 20px;
+        background: $global-color;
+      }
+      >p:last-of-type{
+        background: #ff5c4f;
+      }
+    }
+  }
+  .tab-table{
+    float: left;
+    >p{
+      float: left;
+      font-size: 16px;
+      margin: 20px 0;
+      cursor: pointer;
+      &.active{
+        font-weight: bold;
+        color: #666;
+      }
+    }
+    >p:last-of-type{
+      margin-left: 40px;
+
+    }
+    width: 100%;
+    margin: 10px 0;
+    .one{
+      float: left;
+      >p{
+        float: left;
+        font-size: 16px;
+        margin: 20px 0;
+        cursor: pointer;
+        &.active{
+          font-weight: bold;
+          color: #666;
+        }
+      }
+      >p:last-of-type{
+        margin-left: 40px;
+
+      }
+    }
+    .second{
+      margin-top: 10px;
+      float: right;
+    }
+  }
+  .result-select{
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    >div{
+      float: left;
+      margin-right: 20px;
+      >span{
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  .tables{
+    width: 100%;
+    .un-quality{
+      cursor: pointer;
+      color: red;
+    }
+    .upload-authority{
+      color: $global-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .upload-unauthority{
+      color: red;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    .check-title{
+      float: left;
+      display: inline-block;
+    }
+    .check-status{
+      width: 130px;
+      display: inline-block;
+      float: left;
+      margin-top: -2px;
+      margin-left: -10px;
+    }
+    .btns{
+      .check-upload{
+        float: left;
+        .check-text{
+          text-decoration: underline;
+        }
+      }
+
+      color: $global-color;
+      >span{
+        padding: 0 4px;
+        text-decoration: underline;
+        cursor: pointer;
+        .un-quality{
+          color: red;
+        }
+      }
+    }
+    .check-radios{
+      .el-radio{
+        margin-top: 6px;
+        float: left;
+      }
+    }
+  }
+  .wrap-select{
+    box-sizing: content-box;
+    background: #fff;
+    .el-form{
+      padding-top: 14px;
+    }
+    .rightBox{
+      float: right;
+    }
+  }
+}

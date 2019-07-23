@@ -1,0 +1,61 @@
+@import "@/assets/css/varibles.scss";
+@import "~@/pages/inspectionPlan/pages/inspectionCreate.scss";
+
+.upload-btn{
+  height: 28px;
+  padding: 0 20px;
+  border: 1px solid $global-color;
+  color:  $global-color;
+  line-height: 28px;
+  display: inline-block;
+  border-radius: 30px;
+}
+.manageInterviewContent {
+  .table-box {
+    margin: 20px 0;
+  }
+  .m_r20 {
+    margin-right: 20px;
+  }
+  .btn-item {
+    text-decoration: underline;
+    color: #0cb3f0;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    &:hover {
+      color: #3dc2f3;
+    }
+  }
+  .color_red{
+    color: #c00;
+  }
+}
+.check-status {
+  .el-input__suffix {
+    right: 10px;
+    top: 2px;
+  }
+}
+.el-table .cell{
+  .el-tag{
+    margin: 2px 5px;
+  }
+}
+.fileItem{
+  max-width: calc( 100% - 20px );
+  position: relative;
+  .fileName{
+    display: inline-block;
+    max-width: calc( 100% - 10px );
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .el-icon-close{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+  }
+}

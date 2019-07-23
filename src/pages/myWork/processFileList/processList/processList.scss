@@ -1,0 +1,23 @@
+.process-wrap{
+  margin-top: 20px;
+  .search-list{
+    margin: 20px 0;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background: #ffffff;
+    >p{
+      float: left;
+      font-size: 14px;
+    }
+    .search-input{
+      margin: 0 10px;
+    }
+  }
+  .table{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,219 @@
+.topBox {
+  background: #ecf1f4;
+  padding: 0 13px;
+  border-bottom: 1px solid $table-color;
+  height: 50px;
+}
+
+.leftBox {
+  margin-right: 220px;
+
+  .topBox {
+    .txt-box {
+      position: absolute;
+      top: 0;
+      left: 13px;
+      right: 227px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .txt {
+        font-weight: 600;
+        line-height: 50px;
+        margin-right: 22px;
+
+        .var {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .page {
+      line-height: 46px;
+
+      input {
+        padding: 0 2px;
+        width: 18px;
+        height: 20px;
+        border: 1px solid #dbe0e4;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 12px;
+        color: $txt-color;
+        display: block;
+        float: left;
+        margin-top: 13px;
+      }
+    }
+
+    .under {
+      line-height: 46px;
+      margin: 0 13px 0 20px;
+    }
+  }
+
+  .img-box {
+    //overflow-y: auto;
+    position: relative;
+    padding: 60px 0;
+
+    .inner {
+      position: relative;
+      margin: 0 auto;
+      width: calc(100% - 230px);
+      padding: 10px 115px;
+      overflow-y: auto;
+      img {
+        width: 100%;
+        box-shadow: 0 0 7px 1px #ccc;
+      }
+      .imgList {
+        width: 100%;
+      }
+    }
+    .do {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      border-radius: 8px;
+      line-height: 34px;
+      height: 34px;
+      text-align: center;
+      width: 118px;
+      left: 50%;
+      cursor: pointer;
+
+      &.top {
+        top: 13px;
+      }
+
+      &.bottom {
+        bottom: 13px;
+      }
+    }
+    .arrow {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      height: 56px;
+      width: 56px;
+      margin-top: -28px;
+      cursor: pointer;
+      text-align: center;
+      i {
+        font-size: 70px;
+        color: #fff;
+        line-height: 80px;
+      }
+
+      &.prev {
+        left: 30px;
+        background: url("~@/assets/images/netCheck/imgViewIcon_07.png") no-repeat center center;
+      }
+
+      &.next {
+        right: 40px;
+        background: url("~@/assets/images/netCheck/imgViewIcon_05.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+.rightBox {
+  width: 219px;
+
+  .mark-box {
+    overflow: hidden;
+
+    .mark {
+      width: 160px;
+      margin: 18px auto 0 auto;
+
+      .check {
+        margin-bottom: 10px;
+      }
+    }
+
+    .operate-box {
+      width: 160px;
+      margin: 18px auto;
+
+      .operate {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+
+    .var.under {
+      width: 160px;
+      margin: 18px auto 24px;
+    }
+  }
+}
+
+.line {
+  right: 219px;
+  top: 70px;
+}
+.fileTable {
+  text-decoration: none;
+}
+
+.border-danger {
+  background-color: #fff;
+  color: #e34d3b;
+  &:hover {
+    color: #e97162;
+  }
+}
+
+.imgHeadWrap {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #d1dfe3;
+  background-color: #ecf1f4;
+}
+.imgHeadLeft {
+  padding-left: 15px;
+}
+.imgHeadCenter {
+  text-align: center;
+}
+.imgHeadRight {
+  text-align: right;
+  padding-right: 20px;
+}
+.imgPage {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 14px;
+  .pageInput {
+    width: 30px;
+    height: 18px;
+    text-align: center;
+    padding: 0 5px;
+    line-height: 18px;
+    border: 1px solid #acc6cc;
+    border-radius: 3px;
+  }
+}
+.icon-mark {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  color: #e34d3b;
+  font-style: normal;
+  cursor: pointer;
+}
+.markY {
+  background: url("~@/assets/images/netCheck/icon_06.png") no-repeat left center;
+}
+.markN {
+  background: url("~@/assets/images/netCheck/icon_03.png") no-repeat left center;
+  color: #333;
+}

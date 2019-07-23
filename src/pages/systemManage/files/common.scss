@@ -1,0 +1,131 @@
+.system-wrap{
+  .model-search{
+    background: #ffffff;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: content-box;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .craw-operate{
+    >span{
+      color: $global-color;
+      cursor: pointer;
+    }
+    .btns{
+      text-decoration: underline;
+    }
+    .one{
+      border: 1px solid $global-color;
+      padding: 2px 19px;
+      border-radius: 27px;
+    }
+  }
+  .craw-dialog {
+    padding: 0 70px;
+    > h3 {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .dialog-input {
+      width: 40px;
+      height: 20px;
+      border: 1px solid #dddddd;
+      margin-top: -10px;
+      margin-left: -24px;
+      padding: 0px 2px;
+      box-sizing: content-box;
+    }
+    .dialog-check {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      .dialog-second {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .model-btns{
+    margin: 20px 0;
+  }
+  .dialog-alert{
+    color: red;
+    border: 1px solid red;
+    padding: 14px 0;
+    height: 20px;
+    line-height: 20px;
+    >p{
+      float: left;
+
+    }
+    >p:first-of-type{
+      width: 50px;
+      height: 50px;
+      background: red;
+      padding: 0 !important;
+      margin-top: -14px;
+      margin-right: 10px;
+      >i{
+        font-size: 30px;
+        color: #ffffff;
+        line-height: 50px;
+        margin-left: 10px;
+      }
+    }
+    .el-icon-warning-outline{
+      color: red;
+      font-size: 120px;
+    }
+  }
+  .dialog-content{
+    text-align: center;
+    >div{
+      float: left;
+    }
+    >div:first-of-type{
+      margin-right: 20px;
+      line-height: 28px;
+    }
+    .unload-btn{
+      float: left;
+      width: 120px;
+      background: $global-color;
+      border-radius: 20px;
+      color: #fff;
+      height: 30px;
+      font-size: 12px;
+      box-sizing: border-box;
+      line-height: 30px;
+      margin-right: 20px;
+      .upload{
+        color: #fff;
+      }
+    }
+  }
+  .btns{
+    >span{
+      color: $global-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    >span:first-of-type{
+      margin-right: 6px;
+    }
+  }
+  .btns{
+    >span{
+      color: $global-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    >span:first-of-type{
+      margin-right: 6px;
+    }
+  }
+  .fr{
+    float: right;
+  }
+  .mt20{
+    margin-top: 20px;
+  }
+
+}
